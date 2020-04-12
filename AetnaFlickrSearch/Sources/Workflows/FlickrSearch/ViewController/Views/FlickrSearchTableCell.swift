@@ -22,9 +22,9 @@ class FlickrSearchCell: UITableViewCell {
 
         let imageURL = URL(string: item.media.m)
         self.flickrImage?.kf.setImage(with: imageURL)
-        self.title?.text = item.title
-        self.height?.text = item.height()
-        self.width?.text = item.width()
+        self.title?.text = "Title: \(item.title)"
+        self.height?.text = "height: \(item.height())"
+        self.width?.text = "width: \(item.width())"
     }
     
     private func applyDesign() {
@@ -60,7 +60,7 @@ class FlickrSearchCell: UITableViewCell {
         addSubview(width)
         
         NSLayoutConstraint.activate([
-            width.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
+            width.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 5),
             width.leadingAnchor.constraint(equalTo: flickrImage.trailingAnchor, constant: 10),
             width.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10)
         ])
@@ -72,7 +72,7 @@ class FlickrSearchCell: UITableViewCell {
         addSubview(height)
         
         NSLayoutConstraint.activate([
-            height.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
+            height.topAnchor.constraint(equalTo: width.bottomAnchor, constant: 5),
             height.leadingAnchor.constraint(equalTo: flickrImage.trailingAnchor, constant: 10),
             height.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10)
         ])

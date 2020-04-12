@@ -27,12 +27,12 @@ struct FlickrItem: Equatable, Codable {
 extension FlickrItem {
     func height() -> String {
         // TODO: - extract height value from description and return
-        return ""
+        return "590"
     }
     
     func width() -> String {
         // TODO: - extract height value from description and return
-        return ""
+        return "123"
     }
 }
 

@@ -15,17 +15,6 @@ protocol NetworkDispatcher {
 
 struct NetworkDispatcherImplementation: NetworkDispatcher {
 
-    // MARK: - Properties
-
-    private let defaultHeaders: [String: String] = ["Content-Type": "application/json"]
-    private let multipartHeaders: [String: String] = {
-        return ["Content-Type": "multipart/form-data; boundary=\(boundaryString)"]
-    }()
-
-    private static let boundaryString: String = {
-        return "--Pond5AppBoundary\(UUID().uuidString)"
-    }()
-
     // MARK: - Public
 
     func dispatch(request: RequestData, multipart: Bool, completion: @escaping ((Result<Data>) -> Void)) {
@@ -40,7 +29,7 @@ struct NetworkDispatcherImplementation: NetworkDispatcher {
 
         urlComponents.queryItems = queryParams
 
-        var headers: [String: String] = multipart ? multipartHeaders : defaultHeaders
+        var headers: [String: String] = ["Content-Type": "application/json"]
         request.headers?.forEach({ (key, value) in
             headers[key] = value
         })
