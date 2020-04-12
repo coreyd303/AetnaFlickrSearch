@@ -8,12 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		E04296D924410C7400FD00BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296D824410C7400FD00BD /* AppDelegate.swift */; };
-		E04296DB24410C7400FD00BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296DA24410C7400FD00BD /* SceneDelegate.swift */; };
-		E04296DD24410C7400FD00BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296DC24410C7400FD00BD /* ViewController.swift */; };
-		E04296E024410C7400FD00BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04296DE24410C7400FD00BD /* Main.storyboard */; };
 		E04296E224410C7A00FD00BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04296E124410C7A00FD00BD /* Assets.xcassets */; };
 		E04296E524410C7A00FD00BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04296E324410C7A00FD00BD /* LaunchScreen.storyboard */; };
 		E04296F024410C7B00FD00BD /* AetnaFlickrSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296EF24410C7B00FD00BD /* AetnaFlickrSearchTests.swift */; };
+		E042970624426CEA00FD00BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970524426CEA00FD00BD /* Coordinator.swift */; };
+		E042970824426D1B00FD00BD /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970724426D1B00FD00BD /* BaseCoordinator.swift */; };
+		E042970B24426D4500FD00BD /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970A24426D4500FD00BD /* Presentable.swift */; };
+		E042970D24426D5000FD00BD /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970C24426D5000FD00BD /* Presenter.swift */; };
+		E042970F24426D5F00FD00BD /* WindowProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970E24426D5F00FD00BD /* WindowProviding.swift */; };
+		E042971224426DAD00FD00BD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042971124426DAD00FD00BD /* Router.swift */; };
+		E042971524426DDE00FD00BD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042971424426DDE00FD00BD /* Result.swift */; };
+		E042971824426E2A00FD00BD /* OpsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042971724426E2A00FD00BD /* OpsManager.swift */; };
+		E042971E24426E7F00FD00BD /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042971D24426E7F00FD00BD /* NetworkDispatcher.swift */; };
+		E042972024426E9A00FD00BD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042971F24426E9A00FD00BD /* Request.swift */; };
+		E042972224426EA300FD00BD /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972124426EA300FD00BD /* RequestData.swift */; };
+		E042972424426EAD00FD00BD /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972324426EAD00FD00BD /* RequestType.swift */; };
+		E042972624426EFF00FD00BD /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972524426EFF00FD00BD /* NetworkTarget.swift */; };
+		E042972824426F0800FD00BD /* NetworkPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972724426F0800FD00BD /* NetworkPath.swift */; };
+		E042972A24426F1600FD00BD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972924426F1600FD00BD /* HTTPMethod.swift */; };
+		E042972D24426F5700FD00BD /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972C24426F5700FD00BD /* Queue.swift */; };
+		E04297302442722400FD00BD /* AFSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042972F2442722400FD00BD /* AFSError.swift */; };
+		E0429732244273E600FD00BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0429731244273E600FD00BD /* Default-568h@2x.png */; };
+		E04297342443987800FD00BD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04297332443987800FD00BD /* AppCoordinator.swift */; };
+		E04297362443995900FD00BD /* AppChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04297352443995900FD00BD /* AppChildCoordinatorFactory.swift */; };
+		E0429739244399AF00FD00BD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0429738244399AF00FD00BD /* AppState.swift */; };
+		E042973C24439C3800FD00BD /* BasePresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042973B24439C3800FD00BD /* BasePresentableFactory.swift */; };
+		E06FD04F24439EBE003FCF98 /* FlickrSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD04E24439EBE003FCF98 /* FlickrSearchCoordinator.swift */; };
+		E06FD05124439F29003FCF98 /* FlickrSearchPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD05024439F29003FCF98 /* FlickrSearchPresentableFactory.swift */; };
+		E06FD05324439FB6003FCF98 /* FlickrSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD05224439FB6003FCF98 /* FlickrSearchViewController.swift */; };
+		E06FD0572443A0C4003FCF98 /* FlickrSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0562443A0C4003FCF98 /* FlickrSearchViewModel.swift */; };
+		E06FD07A2443A896003FCF98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0792443A896003FCF98 /* SceneDelegate.swift */; };
+		E06FD0802443B29B003FCF98 /* FlickrSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD07F2443B29B003FCF98 /* FlickrSearchResponse.swift */; };
+		E06FD0822443B419003FCF98 /* FlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0812443B419003FCF98 /* FlickrService.swift */; };
+		E06FD0842443B530003FCF98 /* FlickrServiceRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0832443B530003FCF98 /* FlickrServiceRequestFactory.swift */; };
+		E06FD0872443BEB9003FCF98 /* FlickrSearchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0862443BEB9003FCF98 /* FlickrSearchOperation.swift */; };
+		E06FD0892443BF2E003FCF98 /* AFSOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0882443BF2E003FCF98 /* AFSOperation.swift */; };
+		E06FD08B2443C5C2003FCF98 /* FlickrSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD08A2443C5C2003FCF98 /* FlickrSearchTableCell.swift */; };
+		E06FD0922443CADF003FCF98 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0912443CADF003FCF98 /* Kingfisher.framework */; };
+		E06FD0932443CADF003FCF98 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0912443CADF003FCF98 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,18 +58,66 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E06FD0902443CAD6003FCF98 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E06FD0932443CADF003FCF98 /* Kingfisher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E04296D524410C7400FD00BD /* AetnaFlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AetnaFlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04296D824410C7400FD00BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E04296DA24410C7400FD00BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E04296DC24410C7400FD00BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E04296DF24410C7400FD00BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E04296E124410C7A00FD00BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04296E424410C7A00FD00BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E04296E624410C7A00FD00BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E04296EB24410C7B00FD00BD /* AetnaFlickrSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AetnaFlickrSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04296EF24410C7B00FD00BD /* AetnaFlickrSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AetnaFlickrSearchTests.swift; sourceTree = "<group>"; };
 		E04296F124410C7B00FD00BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E042970524426CEA00FD00BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E042970724426D1B00FD00BD /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		E042970A24426D4500FD00BD /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		E042970C24426D5000FD00BD /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		E042970E24426D5F00FD00BD /* WindowProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowProviding.swift; sourceTree = "<group>"; };
+		E042971124426DAD00FD00BD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E042971424426DDE00FD00BD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E042971724426E2A00FD00BD /* OpsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpsManager.swift; sourceTree = "<group>"; };
+		E042971D24426E7F00FD00BD /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		E042971F24426E9A00FD00BD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E042972124426EA300FD00BD /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		E042972324426EAD00FD00BD /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		E042972524426EFF00FD00BD /* NetworkTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		E042972724426F0800FD00BD /* NetworkPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPath.swift; sourceTree = "<group>"; };
+		E042972924426F1600FD00BD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E042972C24426F5700FD00BD /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E042972F2442722400FD00BD /* AFSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFSError.swift; sourceTree = "<group>"; };
+		E0429731244273E600FD00BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E04297332443987800FD00BD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E04297352443995900FD00BD /* AppChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		E0429738244399AF00FD00BD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E042973B24439C3800FD00BD /* BasePresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentableFactory.swift; sourceTree = "<group>"; };
+		E06FD04E24439EBE003FCF98 /* FlickrSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchCoordinator.swift; sourceTree = "<group>"; };
+		E06FD05024439F29003FCF98 /* FlickrSearchPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchPresentableFactory.swift; sourceTree = "<group>"; };
+		E06FD05224439FB6003FCF98 /* FlickrSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchViewController.swift; sourceTree = "<group>"; };
+		E06FD0562443A0C4003FCF98 /* FlickrSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchViewModel.swift; sourceTree = "<group>"; };
+		E06FD0792443A896003FCF98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E06FD07F2443B29B003FCF98 /* FlickrSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchResponse.swift; sourceTree = "<group>"; };
+		E06FD0812443B419003FCF98 /* FlickrService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrService.swift; sourceTree = "<group>"; };
+		E06FD0832443B530003FCF98 /* FlickrServiceRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrServiceRequestFactory.swift; sourceTree = "<group>"; };
+		E06FD0862443BEB9003FCF98 /* FlickrSearchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchOperation.swift; sourceTree = "<group>"; };
+		E06FD0882443BF2E003FCF98 /* AFSOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFSOperation.swift; sourceTree = "<group>"; };
+		E06FD08A2443C5C2003FCF98 /* FlickrSearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchTableCell.swift; sourceTree = "<group>"; };
+		E06FD08D2443CAD6003FCF98 /* KingfisherSwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KingfisherSwiftUI.framework; path = Carthage/Build/iOS/KingfisherSwiftUI.framework; sourceTree = "<group>"; };
+		E06FD0912443CADF003FCF98 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		E06FD0942443CAEA003FCF98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E06FD0972443CAEF003FCF98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06FD0922443CADF003FCF98 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +142,11 @@
 		E04296CC24410C7400FD00BD = {
 			isa = PBXGroup;
 			children = (
+				E0429731244273E600FD00BD /* Default-568h@2x.png */,
 				E04296D724410C7400FD00BD /* AetnaFlickrSearch */,
 				E04296EE24410C7B00FD00BD /* AetnaFlickrSearchTests */,
 				E04296D624410C7400FD00BD /* Products */,
+				E06FD08C2443CAD6003FCF98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +162,8 @@
 		E04296D724410C7400FD00BD /* AetnaFlickrSearch */ = {
 			isa = PBXGroup;
 			children = (
-				E04296D824410C7400FD00BD /* AppDelegate.swift */,
-				E04296DA24410C7400FD00BD /* SceneDelegate.swift */,
-				E04296DC24410C7400FD00BD /* ViewController.swift */,
-				E04296DE24410C7400FD00BD /* Main.storyboard */,
-				E04296E124410C7A00FD00BD /* Assets.xcassets */,
-				E04296E324410C7A00FD00BD /* LaunchScreen.storyboard */,
-				E04296E624410C7A00FD00BD /* Info.plist */,
+				E04296FB24426C0700FD00BD /* Sources */,
+				E04296FA24426BFE00FD00BD /* Resources */,
 			);
 			path = AetnaFlickrSearch;
 			sourceTree = "<group>";
@@ -99,6 +177,331 @@
 			path = AetnaFlickrSearchTests;
 			sourceTree = "<group>";
 		};
+		E04296FA24426BFE00FD00BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E042970324426CA600FD00BD /* Properties */,
+				E042970224426C8E00FD00BD /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E04296FB24426C0700FD00BD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0582443A84A003FCF98 /* SceneDelegate */,
+				E04296FC24426C1500FD00BD /* AppDelegate */,
+				E04296FE24426C4400FD00BD /* AppRoot */,
+				E04296FD24426C2800FD00BD /* Base */,
+				E042972E2442721200FD00BD /* Error */,
+				E042971924426E4400FD00BD /* Networking */,
+				E042971624426E1000FD00BD /* Operations */,
+				E06FD04924439E83003FCF98 /* Workflows */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E04296FC24426C1500FD00BD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E04296D824410C7400FD00BD /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E04296FD24426C2800FD00BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E042972B24426F4A00FD00BD /* Queue */,
+				E042971324426DCA00FD00BD /* Result */,
+				E042971024426D9C00FD00BD /* Router */,
+				E042970924426D2800FD00BD /* Presentable */,
+				E042970424426CD500FD00BD /* Coordinators */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E04296FE24426C4400FD00BD /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				E0429737244399A200FD00BD /* AppState */,
+				E04296FF24426C4D00FD00BD /* Coordinators */,
+				E042970024426C5A00FD00BD /* Factories */,
+				E042970124426C6800FD00BD /* Storyboards */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		E04296FF24426C4D00FD00BD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E04297332443987800FD00BD /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E042970024426C5A00FD00BD /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E04297352443995900FD00BD /* AppChildCoordinatorFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E042970124426C6800FD00BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E04296E324410C7A00FD00BD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E042970224426C8E00FD00BD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E04296E124410C7A00FD00BD /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E042970324426CA600FD00BD /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				E04296E624410C7A00FD00BD /* Info.plist */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		E042970424426CD500FD00BD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E042970524426CEA00FD00BD /* Coordinator.swift */,
+				E042970724426D1B00FD00BD /* BaseCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E042970924426D2800FD00BD /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				E042973A24439C2900FD00BD /* Factories */,
+				E042970A24426D4500FD00BD /* Presentable.swift */,
+				E042970C24426D5000FD00BD /* Presenter.swift */,
+				E042970E24426D5F00FD00BD /* WindowProviding.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		E042971024426D9C00FD00BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E042971124426DAD00FD00BD /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E042971324426DCA00FD00BD /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E042971424426DDE00FD00BD /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		E042971624426E1000FD00BD /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				E042971724426E2A00FD00BD /* OpsManager.swift */,
+				E06FD0882443BF2E003FCF98 /* AFSOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		E042971924426E4400FD00BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E042971C24426E6600FD00BD /* Resources */,
+				E042971B24426E6000FD00BD /* Request */,
+				E042971A24426E5A00FD00BD /* Dispatch */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E042971A24426E5A00FD00BD /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				E042971D24426E7F00FD00BD /* NetworkDispatcher.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		E042971B24426E6000FD00BD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E042971F24426E9A00FD00BD /* Request.swift */,
+				E042972124426EA300FD00BD /* RequestData.swift */,
+				E042972324426EAD00FD00BD /* RequestType.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E042971C24426E6600FD00BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E042972524426EFF00FD00BD /* NetworkTarget.swift */,
+				E042972724426F0800FD00BD /* NetworkPath.swift */,
+				E042972924426F1600FD00BD /* HTTPMethod.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E042972B24426F4A00FD00BD /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				E042972C24426F5700FD00BD /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		E042972E2442721200FD00BD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E042972F2442722400FD00BD /* AFSError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		E0429737244399A200FD00BD /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				E0429738244399AF00FD00BD /* AppState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		E042973A24439C2900FD00BD /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E042973B24439C3800FD00BD /* BasePresentableFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E06FD04924439E83003FCF98 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD04A24439E90003FCF98 /* FlickrSearch */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		E06FD04A24439E90003FCF98 /* FlickrSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0852443BEAB003FCF98 /* Operations */,
+				E06FD07B2443B242003FCF98 /* Service */,
+				E06FD04B24439E99003FCF98 /* Coordinator */,
+				E06FD04C24439E9F003FCF98 /* Factories */,
+				E06FD04D24439EA7003FCF98 /* ViewController */,
+			);
+			path = FlickrSearch;
+			sourceTree = "<group>";
+		};
+		E06FD04B24439E99003FCF98 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD04E24439EBE003FCF98 /* FlickrSearchCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E06FD04C24439E9F003FCF98 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD05024439F29003FCF98 /* FlickrSearchPresentableFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E06FD04D24439EA7003FCF98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD05224439FB6003FCF98 /* FlickrSearchViewController.swift */,
+				E06FD0542443A0AD003FCF98 /* ViewModel */,
+				E06FD0552443A0B4003FCF98 /* Views */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E06FD0542443A0AD003FCF98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0562443A0C4003FCF98 /* FlickrSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E06FD0552443A0B4003FCF98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD08A2443C5C2003FCF98 /* FlickrSearchTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E06FD0582443A84A003FCF98 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0792443A896003FCF98 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		E06FD07B2443B242003FCF98 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0812443B419003FCF98 /* FlickrService.swift */,
+				E06FD07C2443B274003FCF98 /* Factories */,
+				E06FD07E2443B282003FCF98 /* Response */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E06FD07C2443B274003FCF98 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0832443B530003FCF98 /* FlickrServiceRequestFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		E06FD07E2443B282003FCF98 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD07F2443B29B003FCF98 /* FlickrSearchResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E06FD0852443BEAB003FCF98 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0862443BEB9003FCF98 /* FlickrSearchOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		E06FD08C2443CAD6003FCF98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD0972443CAEF003FCF98 /* Quick.framework */,
+				E06FD0942443CAEA003FCF98 /* Nimble.framework */,
+				E06FD0912443CADF003FCF98 /* Kingfisher.framework */,
+				E06FD08D2443CAD6003FCF98 /* KingfisherSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +512,8 @@
 				E04296D124410C7400FD00BD /* Sources */,
 				E04296D224410C7400FD00BD /* Frameworks */,
 				E04296D324410C7400FD00BD /* Resources */,
+				E06FD0902443CAD6003FCF98 /* Embed Frameworks */,
+				E06FD09A2443CB32003FCF98 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -182,7 +587,7 @@
 			files = (
 				E04296E524410C7A00FD00BD /* LaunchScreen.storyboard in Resources */,
 				E04296E224410C7A00FD00BD /* Assets.xcassets in Resources */,
-				E04296E024410C7400FD00BD /* Main.storyboard in Resources */,
+				E0429732244273E600FD00BD /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +600,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E06FD09A2443CB32003FCF98 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E04296D124410C7400FD00BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04296DD24410C7400FD00BD /* ViewController.swift in Sources */,
+				E042970F24426D5F00FD00BD /* WindowProviding.swift in Sources */,
+				E042970624426CEA00FD00BD /* Coordinator.swift in Sources */,
+				E042972424426EAD00FD00BD /* RequestType.swift in Sources */,
+				E042970B24426D4500FD00BD /* Presentable.swift in Sources */,
+				E042972224426EA300FD00BD /* RequestData.swift in Sources */,
+				E042971E24426E7F00FD00BD /* NetworkDispatcher.swift in Sources */,
+				E042972824426F0800FD00BD /* NetworkPath.swift in Sources */,
+				E042972024426E9A00FD00BD /* Request.swift in Sources */,
+				E042971824426E2A00FD00BD /* OpsManager.swift in Sources */,
+				E042973C24439C3800FD00BD /* BasePresentableFactory.swift in Sources */,
+				E06FD04F24439EBE003FCF98 /* FlickrSearchCoordinator.swift in Sources */,
+				E06FD07A2443A896003FCF98 /* SceneDelegate.swift in Sources */,
+				E0429739244399AF00FD00BD /* AppState.swift in Sources */,
+				E042971224426DAD00FD00BD /* Router.swift in Sources */,
+				E06FD05124439F29003FCF98 /* FlickrSearchPresentableFactory.swift in Sources */,
+				E06FD05324439FB6003FCF98 /* FlickrSearchViewController.swift in Sources */,
+				E042972624426EFF00FD00BD /* NetworkTarget.swift in Sources */,
+				E04297302442722400FD00BD /* AFSError.swift in Sources */,
+				E042970824426D1B00FD00BD /* BaseCoordinator.swift in Sources */,
+				E042972A24426F1600FD00BD /* HTTPMethod.swift in Sources */,
+				E06FD0822443B419003FCF98 /* FlickrService.swift in Sources */,
+				E06FD08B2443C5C2003FCF98 /* FlickrSearchTableCell.swift in Sources */,
 				E04296D924410C7400FD00BD /* AppDelegate.swift in Sources */,
-				E04296DB24410C7400FD00BD /* SceneDelegate.swift in Sources */,
+				E06FD0872443BEB9003FCF98 /* FlickrSearchOperation.swift in Sources */,
+				E06FD0802443B29B003FCF98 /* FlickrSearchResponse.swift in Sources */,
+				E06FD0892443BF2E003FCF98 /* AFSOperation.swift in Sources */,
+				E04297342443987800FD00BD /* AppCoordinator.swift in Sources */,
+				E04297362443995900FD00BD /* AppChildCoordinatorFactory.swift in Sources */,
+				E06FD0842443B530003FCF98 /* FlickrServiceRequestFactory.swift in Sources */,
+				E042972D24426F5700FD00BD /* Queue.swift in Sources */,
+				E042971524426DDE00FD00BD /* Result.swift in Sources */,
+				E042970D24426D5000FD00BD /* Presenter.swift in Sources */,
+				E06FD0572443A0C4003FCF98 /* FlickrSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +681,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E04296DE24410C7400FD00BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E04296DF24410C7400FD00BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E04296E324410C7A00FD00BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +812,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
-				INFOPLIST_FILE = AetnaFlickrSearch/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AetnaFlickrSearch/Resources/Properties/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +824,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cbd.AetnaFlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,7 +834,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
-				INFOPLIST_FILE = AetnaFlickrSearch/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AetnaFlickrSearch/Resources/Properties/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +846,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cbd.AetnaFlickrSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

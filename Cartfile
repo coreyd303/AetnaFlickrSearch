@@ -1,0 +1,6 @@
+## Testing Frameworks ##
+github "Quick/Quick" "master"
+github "Quick/Nimble" "master"
+
+## Image Downloading ##
+github "onevcat/Kingfisher" ~> 5.0
