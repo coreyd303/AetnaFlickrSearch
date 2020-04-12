@@ -10,7 +10,6 @@
 		E04296D924410C7400FD00BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296D824410C7400FD00BD /* AppDelegate.swift */; };
 		E04296E224410C7A00FD00BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04296E124410C7A00FD00BD /* Assets.xcassets */; };
 		E04296E524410C7A00FD00BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04296E324410C7A00FD00BD /* LaunchScreen.storyboard */; };
-		E04296F024410C7B00FD00BD /* AetnaFlickrSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04296EF24410C7B00FD00BD /* AetnaFlickrSearchTests.swift */; };
 		E042970624426CEA00FD00BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970524426CEA00FD00BD /* Coordinator.swift */; };
 		E042970824426D1B00FD00BD /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970724426D1B00FD00BD /* BaseCoordinator.swift */; };
 		E042970B24426D4500FD00BD /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042970A24426D4500FD00BD /* Presentable.swift */; };
@@ -46,6 +45,12 @@
 		E06FD08B2443C5C2003FCF98 /* FlickrSearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD08A2443C5C2003FCF98 /* FlickrSearchTableCell.swift */; };
 		E06FD0922443CADF003FCF98 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0912443CADF003FCF98 /* Kingfisher.framework */; };
 		E06FD0932443CADF003FCF98 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0912443CADF003FCF98 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E06FD0A02443D6E1003FCF98 /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD09F2443D6E1003FCF98 /* MockRouter.swift */; };
+		E06FD0A22443D795003FCF98 /* MockFlickrSearchPresentableFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0A12443D795003FCF98 /* MockFlickrSearchPresentableFactory.swift */; };
+		E06FD0A32443D7D6003FCF98 /* FlickrSearchCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD09B2443D64F003FCF98 /* FlickrSearchCoordinatorTests.swift */; };
+		E06FD0A52443D8A2003FCF98 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0972443CAEF003FCF98 /* Quick.framework */; };
+		E06FD0A62443D8A6003FCF98 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06FD0942443CAEA003FCF98 /* Nimble.framework */; };
+		E06FD0A82443D930003FCF98 /* MockFlickrSearchPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06FD0A72443D930003FCF98 /* MockFlickrSearchPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +84,6 @@
 		E04296E424410C7A00FD00BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E04296E624410C7A00FD00BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E04296EB24410C7B00FD00BD /* AetnaFlickrSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AetnaFlickrSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E04296EF24410C7B00FD00BD /* AetnaFlickrSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AetnaFlickrSearchTests.swift; sourceTree = "<group>"; };
 		E04296F124410C7B00FD00BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E042970524426CEA00FD00BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E042970724426D1B00FD00BD /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
@@ -118,6 +122,11 @@
 		E06FD0912443CADF003FCF98 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		E06FD0942443CAEA003FCF98 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E06FD0972443CAEF003FCF98 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E06FD09B2443D64F003FCF98 /* FlickrSearchCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchCoordinatorTests.swift; sourceTree = "<group>"; };
+		E06FD09E2443D6E0003FCF98 /* AetnaFlickrSearchTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AetnaFlickrSearchTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E06FD09F2443D6E1003FCF98 /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
+		E06FD0A12443D795003FCF98 /* MockFlickrSearchPresentableFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlickrSearchPresentableFactory.swift; sourceTree = "<group>"; };
+		E06FD0A72443D930003FCF98 /* MockFlickrSearchPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlickrSearchPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06FD0A52443D8A2003FCF98 /* Quick.framework in Frameworks */,
+				E06FD0A62443D8A6003FCF98 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +182,9 @@
 		E04296EE24410C7B00FD00BD /* AetnaFlickrSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				E04296EF24410C7B00FD00BD /* AetnaFlickrSearchTests.swift */,
+				E06FD09B2443D64F003FCF98 /* FlickrSearchCoordinatorTests.swift */,
+				E06FD0A92443D96A003FCF98 /* BridgingHeader */,
+				E06FD09D2443D6D4003FCF98 /* Mocks */,
 				E04296F124410C7B00FD00BD /* Info.plist */,
 			);
 			path = AetnaFlickrSearchTests;
@@ -502,6 +515,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E06FD09D2443D6D4003FCF98 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD09F2443D6E1003FCF98 /* MockRouter.swift */,
+				E06FD0A12443D795003FCF98 /* MockFlickrSearchPresentableFactory.swift */,
+				E06FD0A72443D930003FCF98 /* MockFlickrSearchPresentable.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E06FD0A92443D96A003FCF98 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD09E2443D6E0003FCF98 /* AetnaFlickrSearchTests-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +562,7 @@
 				E04296E724410C7B00FD00BD /* Sources */,
 				E04296E824410C7B00FD00BD /* Frameworks */,
 				E04296E924410C7B00FD00BD /* Resources */,
+				E06FD0A42443D826003FCF98 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -557,6 +589,7 @@
 					};
 					E04296EA24410C7B00FD00BD = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 						TestTargetID = E04296D424410C7400FD00BD;
 					};
 				};
@@ -619,6 +652,25 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		E06FD0A42443D826003FCF98 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -666,7 +718,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04296F024410C7B00FD00BD /* AetnaFlickrSearchTests.swift in Sources */,
+				E06FD0A82443D930003FCF98 /* MockFlickrSearchPresentable.swift in Sources */,
+				E06FD0A32443D7D6003FCF98 /* FlickrSearchCoordinatorTests.swift in Sources */,
+				E06FD0A02443D6E1003FCF98 /* MockRouter.swift in Sources */,
+				E06FD0A22443D795003FCF98 /* MockFlickrSearchPresentableFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,8 +910,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AetnaFlickrSearchTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -866,6 +926,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cbd.AetnaFlickrSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AetnaFlickrSearchTests/BridgingHeader/AetnaFlickrSearchTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AetnaFlickrSearch.app/AetnaFlickrSearch";
@@ -877,8 +939,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X2YU7S2XU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AetnaFlickrSearchTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -888,6 +955,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cbd.AetnaFlickrSearchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AetnaFlickrSearchTests/BridgingHeader/AetnaFlickrSearchTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AetnaFlickrSearch.app/AetnaFlickrSearch";
