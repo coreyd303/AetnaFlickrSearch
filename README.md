@@ -28,10 +28,6 @@ $ brew install Carthage
 $ carthage update --no-use-binaries --platform iOS
 ```
 
-# API
-### I put together a lightweight API service using NODE to support this sample. You will need to also clone this project and run this server locally.
-[FJSampleNodeServer](https://github.com/coreyd303/FJSampleNodeServer)
-
 # Testing
 ### Tests are developed to support a high level of code confidence and can be run from Xcode via
 _cmd + u_
